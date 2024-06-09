@@ -1,0 +1,145 @@
+/* General styles */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(116, 95, 95);
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.header-title {
+    font-size: 26px;
+    color: black;
+}
+
+.footer-content-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.quick-links,
+.social-links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Space between sections on smaller screens */
+}
+
+.social-links h2 {
+    color: black;
+    font-size: 26px;
+}
+
+.quick-link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-link-item a {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.quick-link-item a:hover {
+    color: black;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media a {
+    font-size: 24px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb-icon a, 
+.twitter-icon a {
+    font-size: 40px; /* Increase the size of the icons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.social-media a:hover {
+    color: black;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quick-links,
+    .social-links {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 22px;
+    }
+
+    .quick-link-item a {
+        font-size: 20px;
+    }
+
+    .social-links h2 {
+        font-size: 22px;
+    }
+
+    .social-media a {
+        font-size: 20px;
+    }
+
+    .fb-icon a,
+    .twitter-icon a {
+        font-size: 36px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 18px;
+    }
+
+    .quick-link-item a {
+        font-size: 16px;
+    }
+
+    .social-links h2 {
+        font-size: 18px;
+    }
+
+    .social-media a {
+        font-size: 16px;
+    }
+
+    .fb-icon a,
+    .twitter-icon a {
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+    }
+}
